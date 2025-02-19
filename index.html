@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="score-board">
+            <div class="score-item">
+                <div class="score-label">Player X</div>
+                <div class="score-value" id="score-x">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Draws</div>
+                <div class="score-value" id="score-draws">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Player O</div>
+                <div class="score-value" id="score-o">0</div>
+            </div>
+        </div>
+        <div class="game-options">
+            <div class="mode-selection">
+                <button class="mode-btn active" data-mode="pvp">Player vs Player</button>
+                <button class="mode-btn" data-mode="ai">Player vs AI</button>
+            </div>
+            <div class="difficulty" id="difficulty">
+                <button class="diff-btn active" data-difficulty="easy">Easy</button>
+                <button class="diff-btn" data-difficulty="medium">Medium</button>
+                <button class="diff-btn" data-difficulty="hard">Hard</button>
+            </div>
+        </div>
+        <div class="status" id="status">X's turn</div>
+        <div class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restart">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
